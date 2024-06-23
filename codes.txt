@@ -1,0 +1,9 @@
+//code for adding tasks with FOR
+
+for (const key in tasks) {
+    if (tasks.hasOwnProperty(key)) {
+        const p = document.createElement('p');
+        p.textContent = `title: ${tasks.title}`;
+        list_div.appendChild(p);
+    }
+}

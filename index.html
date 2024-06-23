@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="header_tasks">
+        <input type="text" id="input_search" placeholder="Pesquisar tarefas...">
+        <button id="btn_add_image"><img src="./public/add_image.png" id="add_image" alt="Adicionar imagem"></button>
+    </div>
+    <div class="add_tasks" style="display: none;">
+        <h1>ADD TASK</h1>
+        <input type="text" placeholder="   Title Task" id="title_task">
+        <textarea id="task" name="task" rows="5" cols="100">   Descrição da tarefa..</textarea>
+        <textarea id="complement_task" name="complement_task" rows="5" cols="100">   Complemento da tarefa..</textarea><br>
+        <button id="btn_add_task">ADICIONAR TAREFA</button>
+    </div>
+    <div class="list_tasks_div">
+        <p class="text_list">LISTA DE TAREFAS</p>
+        <div class="list_tasks" id="list_tasks"></div>
+        <button id="btn_clear_tasks" style="display: none;">Clear All Tasks</button>
+    </div>
+    <div id="task_details_div" style="display: none;">
+        <h2 id="task_title"></h2>
+        <p id="text_list_indentification1">Descrição: </p>
+        <p id="task_description"></p>
+        <p id="text_list_indentification2">Complemento: </p>
+        <p id="task_complement"></p>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
