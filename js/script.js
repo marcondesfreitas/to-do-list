@@ -81,11 +81,9 @@ function updateTaskList(filteredTasks = tasks) {
 
         taskTitle.addEventListener('click', function () {
             if (currentTaskIndex === index) {
-                // Hide the task details
                 task_details_div.style.display = 'none';
                 currentTaskIndex = null;
             } else {
-                // Show the task details
                 task_title_display.textContent = task.title;
                 task_description_display.textContent = task.description;
                 task_complement_display.textContent = task.complement;
